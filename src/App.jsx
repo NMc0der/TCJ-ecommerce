@@ -1,8 +1,13 @@
 import { useState } from "react";
+import Navbar from "./compnents/Navbar";
 import "./App.css";
 
 function App() {
-  return <div className="bg-red-500">APP</div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 }
 
 export default App;
