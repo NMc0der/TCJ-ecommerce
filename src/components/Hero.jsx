@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import Image1 from "../assets/headphone.png";
 import Image2 from "../assets/vr.png";
 import Image3 from "../assets/macbook.png";
+import Button from "./Button";
 
 const HeroData = [
   {
@@ -72,7 +73,11 @@ const Hero = () => {
                       {data.title2}
                     </h1>
                     <div>
-                      <button>Shop Now</button>
+                      <Button
+                        text="Shop By Category"
+                        bgColor="bg-primary"
+                        textColor="text-white"
+                      />
                     </div>
                   </div>
                   {/* img section  */}
@@ -81,7 +86,7 @@ const Hero = () => {
                       <img
                         src={data.img}
                         alt=""
-                        className="h-[300px] w-[300px] sm:h-[450px] 
+                        className="h-[300px] w-[300px] sm:h-[450px] sm:w-[450px] 
                         sm:scale-105 lg:scale-110 object-contain mx-auto drop-shadow-[-8px_4px_6px_rgba(0,0,0,0.4)]
                          "
                       />
