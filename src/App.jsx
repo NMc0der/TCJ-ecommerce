@@ -5,6 +5,20 @@ import "./App.css";
 import Category from "./components/Category";
 import Category2 from "./components/Category2";
 import Services from "./components/Sevices";
+import Banner from "./components/Banner";
+import headphones from "./assets/headphone.png";
+
+const BannerData = {
+  discount: "30% OFF",
+  title: "Fine Smile",
+  date: "Jan 10 to Jan 28",
+  image: headphones,
+  title2: "Air Solo Bass",
+  title3: "Winter Sale",
+  title4:
+    "Lorem ipsum dolor sit amet consecerer algapghjhag elit eauwfe drrdceidens",
+  bgColor: "#f42c37",
+};
 
 function App() {
   return (
@@ -14,6 +28,7 @@ function App() {
       <Category />
       <Category2 />
       <Services />
+      <Banner data={BannerData} />
     </div>
   );
 }
