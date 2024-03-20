@@ -11,6 +11,7 @@ import Products from "./components/Products";
 import smartwatch2 from "./assets/smartwatch2-removebg-preview.png";
 import Blogs from "./components/Blogs";
 import Partners from "./components/Partners";
+import Footer from "./components/Footer";
 
 const BannerData = {
   discount: "30% OFF",
@@ -49,6 +50,7 @@ function App() {
       <Banner data={BannerData2} />
       <Blogs />
       <Partners />
+      <Footer />
     </div>
   );
 }
